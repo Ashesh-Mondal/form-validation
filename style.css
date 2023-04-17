@@ -97,7 +97,7 @@ body{
 
 
 #form{
-    margin: 2.5rem 5rem;
+    margin: 2.5rem 5rem 1.5rem 5rem; 
     width: 80%;
 }
 
@@ -140,6 +140,20 @@ body{
     text-transform: uppercase;
     font-weight: 500;
     border: none;
-    box-shadow: 0 4px 0 -1px hsla(154, 41%, 10%, 0.613);
+    box-shadow: 0 5px 0 -1px hsla(154, 71%, 40%, 0.613);
     outline: none;
+}
+
+.form-container .terms-and-conditions{
+    color: hsl(246, 25%, 77%);
+    font-weight: 700;
+    padding-bottom: 5rem;
+}
+
+.terms-and-conditions .terms-and-services{
+    color: hsl(0, 100%, 74%);
+}
+
+.form-container{
+    box-shadow: 0 9px 0 -1px hsla(0, 55%, 39%, 0.28);
 }
