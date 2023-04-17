@@ -116,6 +116,11 @@ body{
     border: 1px solid hsl(248, 32%, 49%);
 }
 
+#form .input-control input:focus-within{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
 #form .input-control ::placeholder{
     color: hsl(249, 10%, 26%);
     font-size: 1.5rem;
