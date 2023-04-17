@@ -29,6 +29,10 @@ body{
     padding: 3rem;
 }
 
+
+
+/* ############################# left container styling ############################# */
+
 .left-container{
     display: flex;
     flex-direction: column;
@@ -46,5 +50,30 @@ body{
 .left-container .main-paragraph{
     font-size: 2rem;
     line-height: 3rem;
+}
+
+
+
+/* ############################# right container styling ############################# */
+
+.right-container{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+.right-container .trial-days{
+    background: hsl(248, 32%, 49%);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 9px 0 -1px hsla(0, 55%, 39%, 0.28);
+    color: hsl(0, 0%, 100%);
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
