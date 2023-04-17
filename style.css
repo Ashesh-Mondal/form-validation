@@ -126,3 +126,20 @@ body{
     font-size: 1.5rem;
     font-weight: 500;
 }
+
+#form .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    font-size: 1.6rem;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: none;
+    box-shadow: 0 4px 0 -1px hsla(154, 41%, 10%, 0.613);
+    outline: none;
+}
