@@ -72,15 +72,14 @@ body{
     box-shadow: 0 9px 0 -1px hsla(0, 55%, 39%, 0.28);
     color: hsl(0, 0%, 100%);
     height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    padding-top: 1.5rem;
     font-size: 1.6rem;
     font-weight: 600;
 }
 
 .right-container .trial-days .amount{
-    padding-left: 0.5rem;
+    padding-left: 0.2rem;
     font-weight: 400;
 }
 
@@ -148,12 +147,104 @@ body{
     color: hsl(246, 25%, 77%);
     font-weight: 700;
     padding-bottom: 5rem;
+    width: 80%;
+    padding-left: 3rem;
 }
 
 .terms-and-conditions .terms-and-services{
     color: hsl(0, 100%, 74%);
+    padding-left: 0.1rem;
 }
 
 .form-container{
     box-shadow: 0 9px 0 -1px hsla(0, 55%, 39%, 0.28);
+}
+
+
+
+/* ############################# Media Queary Styling ############################# */
+
+@media (min-width: 1000px) and (max-width: 1160px){
+
+    .form-container .terms-and-conditions{
+        padding-left: 0;
+        width: 70%;
+    }
+}
+
+@media (min-width: 810px) and (max-width: 1000px){
+    :root{
+        font-size: 50%;
+    }
+}
+
+@media (min-width: 430px) and (max-width: 809px){
+    :root{
+        font-size: 50%;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 60rem;
+    }
+
+    .container .left-container{
+        text-align: center;
+    }
+}
+
+@media (max-width: 429px){
+    :root{
+        font-size: 50%;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 60rem;
+        gap: 2rem;
+    }
+
+    .container .left-container{
+        text-align: center;
+    }
+
+    .left-container .main-heading{
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 4rem;
+    padding: 1.5rem 0;
+    }
+
+    .left-container .main-paragraph{
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    .right-container .trial-days{
+        background: hsl(248, 32%, 49%);
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 9px 0 -1px hsla(0, 55%, 39%, 0.28);
+        color: hsl(0, 0%, 100%);
+        height: 8rem;
+        text-align: center;
+        padding: 1.5rem 1rem 0 1rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    #form{
+        margin: 1rem 2.5rem 1rem 2.5rem; 
+        width: 80%;
+    }
+
+    .form-container .terms-and-conditions{
+        color: hsl(246, 25%, 77%);
+        font-weight: 700;
+        padding-bottom: 3rem;
+        width: 80%;
+        padding-left: 1rem;
+    }
 }
