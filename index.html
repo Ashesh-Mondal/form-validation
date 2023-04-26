@@ -1,63 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  
-  <title>Frontend Mentor | Intro component with sign up form</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./formValidation.js" defer></script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-</head>
-<body>
+    <title>Frontend Mentor | Intro component with sign up form</title>
 
-  <div class="container">
-    <div class="left-container">
-      <h1 class="main-heading">
-        Learn to code by watching others
-      </h1>
-      <p class="main-paragraph">
-        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-        but understanding how developers think is invaluable.
-      </p>
-    </div>
-    <div class="right-container">
-      <div class="trial-days">
-        Try it free 7 days <span class="amount">then $20/mo. thereafter</span>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="left-container">
+        <h1 class="main-heading">Learn to code by watching others</h1>
+        <p class="main-paragraph">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
       </div>
-      <div class="form-container">
-        <form id="form" action="/">
-          <div class="input-control">
-            <input type="text" id="fname" placeholder="First Name">
-            <div class="error"></div>
+      <div class="right-container">
+        <div class="trial-days">
+          Try it free 7 days <span class="amount">then $20/mo. thereafter</span>
+        </div>
+        <div class="form-container">
+          <form id="form" action="/">
+            <div class="input-control">
+              <input type="text" id="fname" placeholder="First Name" />
+              <img src="./images/icon-error.svg" id="img-1" alt="" srcset="" />
+              <p id="fname-error">First Name cannot be empty</p>
+            </div>
+            <div class="input-control">
+              <input type="text" id="lname" placeholder="Last Name" />
+              <img src="./images/icon-error.svg" id="img-2" alt="" srcset="" />
+              <p id="lname-error">Last Name cannot be empty</p>
+            </div>
+            <div class="input-control">
+              <input type="text" id="email" placeholder="Email Address" />
+              <img src="./images/icon-error.svg" id="img-3" alt="" srcset="" />
+              <p id="email-error">Looks like this is not an email</p>
+            </div>
+            <div class="input-control">
+              <input type="password" id="password" placeholder="Password" />
+              <img src="./images/icon-error.svg" id="img-4" alt="" srcset="" />
+              <p id="password-error">Password cannot be empty</p>
+            </div>
+            <div class="input-control">
+              <button class="btn" id="button">Claim your free trial</button>
+            </div>
+          </form>
+          <div class="terms-and-conditions">
+            By clicking the button, you are agreeing to our
+            <span class="terms-and-services">Terms and Services</span>
           </div>
-          <div class="input-control">
-            <input type="text" id="lname" placeholder="Last Name">
-            <div class="error"></div>
-          </div>
-          <div class="input-control">
-            <input type="text" id="email" placeholder="Email Address">
-            <div class="error"></div>
-          </div>
-          <div class="input-control">
-            <input type="text" id="password" placeholder="Password">
-            <div class="error"></div>
-          </div>
-          <div class="input-control">
-            <button class="btn" type="submit">Claim your free trial</button>
-          </div>
-        </form> 
-        <div class="terms-and-conditions">
-          By clicking the button, you are agreeing to our <span class="terms-and-services">Terms and Services</span>
         </div>
       </div>
     </div>
-
-  </div>
-  
-
-  <script src="./javaScript.js"></script>
-</body>
+  </body>
 </html>
