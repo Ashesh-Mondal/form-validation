@@ -107,7 +107,8 @@ body {
 }
 
 #form .input-control input:focus {
-  border: 1px solid hsl(248, 32%, 49%);
+  border: 1.5px solid hsl(248, 32%, 49%);
+  outline: none;
 }
 
 #form .input-control input:focus-within {
